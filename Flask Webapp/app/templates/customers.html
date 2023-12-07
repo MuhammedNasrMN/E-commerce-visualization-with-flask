@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Table Display</title>
+    <!-- Include Bootstrap for table styling (optional) -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <style>
+
+            .centered-container {display: flex;
+                              justify-content: center;
+                                 align-items: center;
+                                }
+            .container {
+                display: flex;
+                flex-direction: row;
+            }
+    
+            .box {
+                padding: 20px;
+            }
+        </style>
+    </head>
+<body style="font-family:arial, sans-serif">
+    <div class="centered-container">
+        <h2 class="box"><a href="/">Homepage  </a></h2>
+        <h2 class="box"><a href="/data">Raw Data</a></h2>
+        <h2 class="box"><a href="/dashboard">  Dashboard</a></h2>    </div>
+    
+    <div class="container mt-4">
+            <h4 id="customers">Customers Table</h4>
+            {{ customers_table_div|safe }}
+    </div>
+</body>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+
+            .centered-container {display: flex;
+                              justify-content: center;
+                                 align-items: center;
+                                }
+            .container {
+                display: flex;
+                flex-direction: row;
+            }
+    
+            .box {
+                width: 50%; /* Each div takes up half of the container's width */
+                padding: 20px;
+            }
+        </style>
+    </head>
+<body style="font-family:arial, sans-serif">
+    <div class="centered-container">
+        <h2><a href="/">Homepage</a></h2>
+    </div>
+
+    <div id="chart" class="chart"></div>
+ 
+</body>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<p> While Bed, Bath & Table is the highest selling category it came in third in terms of revenue behind both Health Beauty and Watches Gift 
+    which can be attributed to the average product price in Bed, Bath & Tabel being lower than the other two categories
+</p>
+<div class="container">
+
+    
+    <div class="box">
+        
+        <div>{{ category_revenue_div | safe }}</div> 
+    </div>
+
+    <div class="box">
+        
+        <div>{{ performance_div | safe }}</div>  
+
+    </div>
+</div>
+
+<div class="container">
+    <div>{{ average_price_div | safe }}</div> 
+
+</div>
+
+<div class="container">
+    <div class="box">
+        <p> most orders were less than 270$</p>
+        <div>{{ orders_value_div | safe }}</div> 
+    </div>
+
+    <div class="box">
+        <p> Orders were growing in a consistent way taking into account seasonality. The only exception is the sudden increase 
+            in 24 November which can be attributed to the occurence of black friday on the last day of November which contains deals and discounts
+        which would increase sales </p>
+        <div>{{ orders_by_day_div | safe }}</div>  
+
+    </div>
+</div>
+
+<div class="container">
+    <p> Customers favourite payment method is credit card which is almost 4x more common than the next most common being method which is Boleto</p>
+    <div>
+        {{ payment_method_div | safe }}
+
+    </div>
+</div>
+
+
+    
+
+
+
+
+</html>

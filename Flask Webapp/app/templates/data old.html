@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Table Display</title>
+    <!-- Include Bootstrap for table styling (optional) -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <style>
+
+            .centered-container {display: flex;
+                              justify-content: center;
+                                 align-items: center;
+                                }
+            .container {
+                display: flex;
+                flex-direction: row;
+            }
+    
+            .box {
+                padding: 20px;
+            }
+        </style>
+    </head>
+<body style="font-family:arial, sans-serif">
+    <div class="centered-container">
+        <h2><a href="/">Homepage</a></h2>
+    </div>
+    <div class="centered-container">
+        
+       <!-- <Div class="box">        
+            <h4><a href="#categories">Categories Table</a></h4>
+        </Div>
+
+        <Div class="box">        
+            <h4><a href="#orders">Orders Table</a></h4>
+        </Div>
+
+        <Div class="box">        
+            <h4><a href="#customers">Customers Table</a></h4>
+        </Div>
+
+        <Div class="box">        
+            <h4><a href="#geolocation">Geolocation Table</a></h4>
+        </Div>
+
+        <Div class="box">        
+            <h4><a href="#order_items">Order Items Table</a></h4>
+        </Div>
+
+        <Div class="box">        
+            <h4><a href="#order_payments">Order Payments Table</a></h4>
+        </Div>
+
+        <Div class="box">        
+            <h4><a href="#products">Products Table</a></h4>
+        </Div> -->
+
+        <Div class="box">        
+            <h4><a href="#reviews">Reviews Table</a></h4> 
+        </Div>
+
+        <Div class="box">        
+            <h4><a href="#sellers">Sellers Table</a></h4>
+        </Div>
+
+    </div>
+
+
+  <!--  <div class="container mt-4">
+        <h4 id="categories">Categories Table</h4>
+        {{ categories_table_div|safe }}
+    </div>
+
+    <div class="container mt-4">
+        <h4 id="orders">Orders Table</h4>
+        {{ orders_table_div|safe }}
+    </div>
+
+    <div class="container mt-4">
+        <h4 id="customers">Customers Table</h4>
+        {{ Customers_table_div|safe }}
+    </div>
+
+    <div class="container mt-4">
+        <h4 id="geolocation">Geolocation Table</h4>
+        {{ geolocation_table_div|safe }}
+    </div>
+
+    <div class="container mt-4">
+        <h4 id="order_items">Order Items Table</h4>
+        {{ order_items_table_div|safe }}
+    </div>
+
+    <div class="container mt-4">
+        <h4 id="order_payments">Order Payments Table</h4>
+        {{ order_payments_table_div|safe }}
+    </div>
+
+    <div class="container mt-4">
+        <h4 id="products">Products Table</h4>
+        {{ products_table_div|safe }}
+    </div> -->
+
+    <h4 id="reviews">Reveiews Table</h4>
+
+    <div class="container mt-4">
+        {{ reviews_table_div|safe }}
+    </div>
+
+    <h4 id="sellers">Sellers Table</h4>
+
+    <div class="container mt-4">
+        {{ sellers_table_div|safe }}
+    </div>
+</body>
