@@ -22,8 +22,8 @@ app = Flask(__name__)
 connection = mysql.connector.connect(
     host='localhost',
     user='root',
-    password='19961999',
-    database='nas'
+    password='password', #type your password here
+    database='db' #enter your database name here
 )
 
 cursor = connection.cursor(buffered=True)
