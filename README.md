@@ -133,4 +133,4 @@ To run the webapp make sure you are connected to the database and then type.
   </code>
 </pre>
 Now the webapp is running and you can access it by going to http://127.0.0.1:5000/
-[Imgur](https://imgur.com/7zPcoup)
+[Imgur](https://i.imgur.com/7zPcoup.png)
