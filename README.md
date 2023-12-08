@@ -133,4 +133,12 @@ To run the webapp make sure you are connected to the database and then type.
   </code>
 </pre>
 Now the webapp is running and you can access it by going to http://127.0.0.1:5000/
+## Screenshots
+![Imgur](https://i.imgur.com/lTeeBbV.png)
 ![Imgur](https://i.imgur.com/7zPcoup.png)
+![Imgur](https://i.imgur.com/YeUOuCC.png)
+![Imgur](https://i.imgur.com/KtBQcK2.png)
+![Imgur](https://i.imgur.com/KLAWVcE.png)
+![Imgur](https://i.imgur.com/NdIl1NZ.png)
+
+
