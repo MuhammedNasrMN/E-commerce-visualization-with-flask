@@ -1,9 +1,9 @@
-#E-commerce Data Analysis and Visualization With Flask
-##Description
+# E-commerce Data Analysis and Visualization With Flask
+## Description
 This project is a project to upload a specifc dataset to MySQL database, then connect to the database and recall the data using SQL queries in Python.
 After that the database is connected to Power BI to visualize the data and draw insights. And finally a webapp was created using Flask to host different visualizations.
 
-###1-Importing Data to MySQL data base
+### 1-Importing Data to MySQL data base
 first of all we will need to to install MySQL Connector and Pandas
 
 <pre>
@@ -41,7 +41,7 @@ looping through files names and adjusting them to SQL syntax and then loading th
       df.to_sql(table_name,con=engine,index=False,if_exists='append')
   </code>
 </pre>
-###2-Data Exploration and Visualization
+### 2-Data Exploration and Visualization
 after uploading the files to MySQL database we can start exploring and drawing insgihts from the data
 first of all we will need to install plotly if it is not already installed
 <pre>
@@ -82,3 +82,23 @@ We then will start recalling data by writing SQL queries and then saving the dat
     df_orders = pd.read_sql(select_query, connection)
   </code>
 </pre>
+### 3-Flask Webapp
+To run the webapp we will need to connect to the database that contains all the tables and we will also need to install flask
+<pre>
+  <code>
+    pip install flask
+  </code>
+</pre>
+We then will import flask, Pandas, Plotly and MySQL connector
+<pre>
+  <code>
+    from flask import Flask, render_template
+import pandas as pd
+import plotly.express as px
+import mysql.connector
+  </code>
+</pre>
+We can do the same steps did in data exploartion to connect to the data base.
+The app has mainly two main routes /dashboard and /data excluding the homepage.
+/dashboard has some visualiztions and comments and insights.
+While /data contains links to all the tables in the data base.
