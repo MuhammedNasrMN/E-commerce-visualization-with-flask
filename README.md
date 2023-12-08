@@ -8,8 +8,8 @@ first of all we will need to to install MySQL Connector and Pandas
 
 <pre>
   <code>
-*pip install pandas*
-*pip install sqlalchemy*  </code>
+pip install pandas
+pip install sqlalchemy  </code>
 </pre>
 after we install both pandas and SQLAlchemy we can import both libraries
 <pre>
