@@ -102,3 +102,34 @@ We can do the same steps did in data exploartion to connect to the data base.
 The app has mainly two main routes /dashboard and /data excluding the homepage.
 /dashboard has some visualiztions and comments and insights.
 While /data contains links to all the tables in the data base.
+We are going to load the data to a pandas dataframe and visualize the data like we did in the exploration step.
+Then we will make the visualizations into an HTML div using the tohtml() function.
+<pre>
+  <code>
+    bar_chart_payment_method = px.bar(df_payment_method,x = 'payment_type', y='Number_of_Payments',
+                                       title = 'Favourite Payment Method For Customers')
+    bar_chart_payment_method.update_layout(
+        xaxis_title='Payment Method',
+        yaxis_title='Number of Transactions'
+        , plot_bgcolor = "white")
+
+    payment_method_div = bar_chart_payment_method.to_html(full_html=False)
+  </code>
+</pre>
+After that we will return all the charts.
+<pre>
+  <code>
+    return render_template('dashboard.html', payment_method_div=payment_method_div, performance_div = performance_div, 
+                           orders_value_div = orders_value_div, orders_by_day_div = orders_by_day_div, 
+                           category_revenue_div = category_revenue_div, average_price_div = average_price_div)
+  </code>
+</pre>
+
+To run the webapp make sure you are connected to the database and then type.
+<pre>
+  <code>
+    set FLASK_APP=your_app_name.py
+    flask run
+  </code>
+</pre>
+Now the webapp is running and you can access it by going to http://127.0.0.1:5000/
