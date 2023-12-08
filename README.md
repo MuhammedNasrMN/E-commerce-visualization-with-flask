@@ -133,4 +133,4 @@ To run the webapp make sure you are connected to the database and then type.
   </code>
 </pre>
 Now the webapp is running and you can access it by going to http://127.0.0.1:5000/
-<blockquote class="imgur-embed-pub" lang="en" data-id="7zPcoup"><a href="https://imgur.com/7zPcoup">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+[Imgur](https://imgur.com/7zPcoup)
