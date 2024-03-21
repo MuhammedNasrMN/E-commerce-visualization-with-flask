@@ -116,7 +116,7 @@ Then we will make the visualizations into an HTML div using the tohtml() functio
     payment_method_div = bar_chart_payment_method.to_html(full_html=False)
   </code>
 </pre>
-After that we will return all the charts.
+After that we will return all the charts on the page.
 <pre>
   <code>
     return render_template('dashboard.html', payment_method_div=payment_method_div, performance_div = performance_div, 
@@ -140,5 +140,4 @@ Now the webapp is running and you can access it by going to http://127.0.0.1:500
 ![Imgur](https://i.imgur.com/KtBQcK2.png)
 ![Imgur](https://i.imgur.com/KLAWVcE.png)
 ![Imgur](https://i.imgur.com/NdIl1NZ.png)
-
 
