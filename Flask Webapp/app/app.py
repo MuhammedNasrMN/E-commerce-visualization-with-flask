@@ -7,6 +7,8 @@ from flask_login import UserMixin
 
 app = Flask(__name__)
 
+
+#Login section to be completed
 #db = SQLAlchemy(app)
 #bcrypt = Bcrypt(app)
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
